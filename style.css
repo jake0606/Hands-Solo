@@ -1,0 +1,26 @@
+:focus{
+    outline: none;
+}
+*{
+    user-select: none;
+}
+@font-face {
+     font-family: 'MainTxt';
+     src: url('Assets/Font/head.ttf');
+}
+@font-face {
+     font-family: 'SmallTxt';
+     src: url('Assets/Font/main.ttf');
+}
+body{
+    background: #000000;
+}
+canvas{
+    width: 1024px;
+    height: 768px;
+    padding: 0;
+    margin: auto;
+    display: block;
+    border: 3px solid rgb(34,141,255);
+    border-radius: 15px;
+}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Hands Solo - Canvas Game</title>
+        <link rel=stylesheet type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="font_preload" style="opacity: 0">
+            <span style="font-family: 'MainTxt', Arial, sans-serif;"></span>
+            <span style="font-family: 'SmallTxt', Arial, sans-serif;"></span>
+        </div>
+        <canvas id="solo" width="1024" height="768" style="border: 1px solid #000000;"></canvas>
+        <script type="text/javascript" src="App42-all-3.1.min.js"></script> 
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script type="text/javascript" src="solo.js"></script>
+        <script>
+            // load fonts before loading the game
+            WebFont.load({
+                custom: { 
+                    families: ['MainTxt', 'SmallTxt'],
+                    urls: ['style.css'] 
+                },
+                active: function(){
+                    init();
+                }
+            });
+        </script>
+    </body>
+</html>
